@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #141414;
+    --card-color: #1f1f1f;
+    --button-color: #333333;
+    --accent: #c4f82a;
+    --text-color: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--card-color);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: var(--button-color);
+    padding: 0.8rem;
+    border-radius: 8px;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.links a:hover {
+    background-color: var(--accent);
+    color: black;
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 16px;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
